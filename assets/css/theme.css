@@ -12,7 +12,7 @@
     --white: #fff;
     --gray: #9ea3c4;
     --gray-dark: #60669d;
-    --primary: #ed6524;
+    --primary: #93bf88;
     --secondary: #4c527d;
     --success: #28a745;
     --info: #17a2b8;
@@ -87,7 +87,7 @@ small {
 }
 
 a {
-    color: #ed6524;
+    color: #93bf88;
     text-decoration: none;
     background-color: transparent
 }
@@ -802,7 +802,7 @@ a > code {
 }
 
 .bg-primary {
-    background-color: #ed6524 !important
+    background-color: #93bf88 !important
 }
 
 a.bg-primary:focus, a.bg-primary:hover {
@@ -1591,7 +1591,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .text-primary {
-    color: #ed6524 !important
+    color: #93bf88 !important
 }
 
 a.text-primary:focus, a.text-primary:hover {
@@ -1683,7 +1683,7 @@ a.theme-link {
 }
 
 a.theme-link:hover {
-    color: #ed6524;
+    color: #93bf88;
     -webkit-text-decoration-color: rgba(237, 101, 36, .8);
     text-decoration-color: rgba(237, 101, 36, .8)
 }
@@ -1693,7 +1693,7 @@ a.theme-link:hover {
 }
 
 .theme-bg-primary {
-    background: #ed6524
+    background: #93bf88
 }
 
 .theme-bg-light-gradient {
@@ -1729,7 +1729,7 @@ a.theme-link:hover {
 
 .samples-section .item-icon {
     font-size: 3rem;
-    color: #ed6524
+    color: #93bf88
 }
 
 .samples-section .item-heading {
@@ -1749,7 +1749,7 @@ a.theme-link:hover {
     display: inline-block;
     width: 36px;
     height: 36px;
-    background: #f5a782;
+    background: #93bf88;
     color: #fff;
     text-align: center;
     border-radius: 50%;
