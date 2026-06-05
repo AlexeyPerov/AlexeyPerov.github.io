@@ -46,7 +46,14 @@
   </style>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="has-bg-effect has-bg-effect--magic-dust">
+  
+  <div class="page-bg-effect page-bg-effect--magic-dust" aria-hidden="true">
+    
+    <canvas class="page-bg-effect__canvas"></canvas>
+    
+  </div>
+  
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <noscript>
     <style>
@@ -76,7 +83,7 @@
           
           <a class="site-nav__link" href="../specops/">SpecOps</a>
           
-          <a class="site-nav__link" href="./">Vibe</a>
+          <a class="site-nav__link site-nav__link--active" href="./" aria-current="page">Vibe</a>
           
           <a class="site-nav__link" href="../tools/">Tools</a>
           
@@ -97,6 +104,7 @@
   
   
   
+  <script src="../background-effects.js" defer></script>
   <script src="../nav.js" defer></script>
 </body>
 </html>

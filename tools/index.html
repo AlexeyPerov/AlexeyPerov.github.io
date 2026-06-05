@@ -46,7 +46,14 @@
   </style>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="has-bg-effect has-bg-effect--magic-dust">
+  
+  <div class="page-bg-effect page-bg-effect--magic-dust" aria-hidden="true">
+    
+    <canvas class="page-bg-effect__canvas"></canvas>
+    
+  </div>
+  
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <noscript>
     <style>
@@ -78,7 +85,7 @@
           
           <a class="site-nav__link" href="../vibe/">Vibe</a>
           
-          <a class="site-nav__link" href="./">Tools</a>
+          <a class="site-nav__link site-nav__link--active" href="./" aria-current="page">Tools</a>
           
         </nav>
         
@@ -88,13 +95,13 @@
   
 
   <main id="main-content">
-    <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate"><div class="container center"><h1 id="intro_title">Tools</h1><p>Desktop utilities for texture workflows and compression prep, plus cross-platform apps, logging libraries, and other open-source projects.</p></div></section>
+    <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate" id="tools-intro"><div class="container center"><h1 id="intro_title">Tools</h1><p>Desktop utilities for texture workflows and compression prep, plus cross-platform apps, logging libraries, and other open-source projects.</p></div></section>
 
-<section class="project-grid section section-gradient scroll-reveal" data-widget-type="project_grid">
+<section class="project-grid section section-gradient scroll-reveal" id="tools-projects" data-widget-type="project_grid">
   <div class="container">
     
     
-    <div class="project-grid__grid" style="">
+    <div class="project-grid__grid">
       
       <article class="project-card scroll-reveal project-card--no-media">
         
@@ -180,6 +187,7 @@
   
   
   
+  <script src="../background-effects.js" defer></script>
   <script src="../nav.js" defer></script>
 </body>
 </html>

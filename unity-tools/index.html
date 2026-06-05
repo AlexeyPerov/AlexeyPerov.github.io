@@ -46,7 +46,14 @@
   </style>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="has-bg-effect has-bg-effect--magic-dust">
+  
+  <div class="page-bg-effect page-bg-effect--magic-dust" aria-hidden="true">
+    
+    <canvas class="page-bg-effect__canvas"></canvas>
+    
+  </div>
+  
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <noscript>
     <style>
@@ -72,7 +79,7 @@
           
           <a class="site-nav__link" href="../">Home</a>
           
-          <a class="site-nav__link" href="./">Unity Tools</a>
+          <a class="site-nav__link site-nav__link--active" href="./" aria-current="page">Unity Tools</a>
           
           <a class="site-nav__link" href="../specops/">SpecOps</a>
           
@@ -366,7 +373,7 @@
   <div class="container">
     
     
-    <div class="project-grid__grid" style="">
+    <div class="project-grid__grid">
       
       <article class="project-card scroll-reveal project-card--no-media">
         
@@ -428,6 +435,7 @@
   <script src="../catalog-carousel.js" defer></script>
   
   
+  <script src="../background-effects.js" defer></script>
   <script src="../nav.js" defer></script>
 </body>
 </html>

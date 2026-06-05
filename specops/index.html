@@ -46,7 +46,14 @@
   </style>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="has-bg-effect has-bg-effect--magic-dust">
+  
+  <div class="page-bg-effect page-bg-effect--magic-dust" aria-hidden="true">
+    
+    <canvas class="page-bg-effect__canvas"></canvas>
+    
+  </div>
+  
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <noscript>
     <style>
@@ -74,7 +81,7 @@
           
           <a class="site-nav__link" href="../unity-tools/">Unity Tools</a>
           
-          <a class="site-nav__link" href="./">SpecOps</a>
+          <a class="site-nav__link site-nav__link--active" href="./" aria-current="page">SpecOps</a>
           
           <a class="site-nav__link" href="../vibe/">Vibe</a>
           
@@ -89,13 +96,13 @@
 
   <main id="main-content">
     <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate"><div class="container center"><h1 id="intro_title">SpecOps</h1><p>SpecOps is a desktop workspace for specs, notes, and project files — built with Tauri and SvelteKit. Open folder-backed workspaces, edit markdown in a tabbed editor, and work with AI agents scoped to your project. AI support is under active development.</p></div></section>
-<section class="photos section section-gradient scroll-reveal" id="photos"><div class="container"><div class="photos-grid" data-image-lightbox><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-split-view.png" data-lightbox-alt="SpecOps split view with markdown editor and AI chat panel"><img src="../assets/spec-ops-main-screen-split-view.png" alt="SpecOps split view with markdown editor and AI chat panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-themes.png" data-lightbox-alt="SpecOps themes panel"><img src="../assets/spec-ops-main-screen-themes.png" alt="SpecOps themes panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-logs.png" data-lightbox-alt="SpecOps logs panel"><img src="../assets/spec-ops-main-screen-logs.png" alt="SpecOps logs panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen.png" data-lightbox-alt="SpecOps main workspace with editor tabs and project panel"><img src="../assets/spec-ops-main-screen.png" alt="SpecOps main workspace with editor tabs and project panel"></button></div></div></section>
+<section class="photos section section-gradient scroll-reveal" id="specops-screenshots"><div class="container"><div class="photos-grid" data-image-lightbox><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-split-view.png" data-lightbox-alt="SpecOps split view with markdown editor and AI chat panel"><img src="../assets/spec-ops-main-screen-split-view.png" alt="SpecOps split view with markdown editor and AI chat panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-themes.png" data-lightbox-alt="SpecOps themes panel"><img src="../assets/spec-ops-main-screen-themes.png" alt="SpecOps themes panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-logs.png" data-lightbox-alt="SpecOps logs panel"><img src="../assets/spec-ops-main-screen-logs.png" alt="SpecOps logs panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen.png" data-lightbox-alt="SpecOps main workspace with editor tabs and project panel"><img src="../assets/spec-ops-main-screen.png" alt="SpecOps main workspace with editor tabs and project panel"></button></div></div></section>
 
 <section class="project-grid section section-gradient scroll-reveal" data-widget-type="project_grid">
   <div class="container">
     
     
-    <div class="project-grid__grid" style="">
+    <div class="project-grid__grid">
       
       <article class="project-card scroll-reveal project-card--no-media">
         
@@ -133,6 +140,7 @@
   
   
   <script src="../image-lightbox.js" defer></script>
+  <script src="../background-effects.js" defer></script>
   <script src="../nav.js" defer></script>
 </body>
 </html>
