@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpecOps</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700%7cRoboto:400,400i,700&amp;display=swap" rel="stylesheet">
+  <meta name="description" content="SpecOps — desktop workspace for specs, notes, and project files. Tauri &#43; SvelteKit app with folder workspaces, markdown editing, and workspace-scoped AI agents.">
+  <link rel="canonical" href="https://alexeyperov.github.io/specops/">
+  <meta property="og:title" content="SpecOps">
+  <meta property="og:description" content="SpecOps — desktop workspace for specs, notes, and project files. Tauri &#43; SvelteKit app with folder workspaces, markdown editing, and workspace-scoped AI agents.">
+  <meta property="og:url" content="https://alexeyperov.github.io/specops/">
+  <meta property="og:type" content="website">
+  
+  <meta name="theme-color" content="#4d8dff">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SpecOps">
+  <meta name="twitter:description" content="SpecOps — desktop workspace for specs, notes, and project files. Tauri &#43; SvelteKit app with folder workspaces, markdown editing, and workspace-scoped AI agents.">
+  
+  <style>
+    :root {
+      --font-heading: "Quicksand", sans-serif;
+      --font-body: "Roboto", sans-serif;
+      --accent: #4d8dff;
+      --accent-muted: #2a5fcc;
+      --follow-us-gradient: radial-gradient(ellipse 100% 60% at 50% 100%, #1a2240 0%, #0c0e14 70%);
+      --footer-gradient: linear-gradient(180deg, #151821 0%, #080a10 100%);
+      --intro-gradient: radial-gradient(ellipse 120% 80% at 50% -20%, #1e2840 0%, #0c0e14 72%);
+      --line: #2d3348;
+      --page-bg: #0c0e14;
+      --photos-gradient: linear-gradient(180deg, #151821 0%, #0c0e14 100%);
+      --project-grid-gradient: linear-gradient(180deg, #0c0e14 0%, #151821 50%, #0c0e14 100%);
+      --social-button-background: linear-gradient(145deg, #1e2230 0%, #151821 100%);
+      --social-icon-facebook: #6bb6ff;
+      --social-icon-github: #f4f6fb;
+      --social-icon-linkedin: #4d8dff;
+      --surface: #151821;
+      --surface-strong: #1e2230;
+      --text-primary: #f4f6fb;
+      --text-secondary: #9aa3b8;
+      --widget-gradient: linear-gradient(145deg, #1a1f2e 0%, #12151f 100%);
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <noscript>
+    <style>
+      .scroll-reveal,
+      .scroll-reveal.scroll-reveal--visible {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+  
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner header-inner--no-brand">
+        
+        
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Site navigation">
+          
+          <a class="site-nav__link" href="../">Home</a>
+          
+          <a class="site-nav__link" href="../unity-tools/">Unity Tools</a>
+          
+          <a class="site-nav__link" href="./">SpecOps</a>
+          
+          <a class="site-nav__link" href="../vibe/">Vibe</a>
+          
+          <a class="site-nav__link" href="../tools/">Tools</a>
+          
+        </nav>
+        
+      </div>
+    </div>
+  </header>
+  
+
+  <main id="main-content">
+    <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate"><div class="container center"><h1 id="intro_title">SpecOps</h1><p>SpecOps is a desktop workspace for specs, notes, and project files — built with Tauri and SvelteKit. Open folder-backed workspaces, edit markdown in a tabbed editor, and work with AI agents scoped to your project. AI support is under active development.</p></div></section>
+<section class="photos section section-gradient scroll-reveal" id="photos"><div class="container"><div class="photos-grid" data-image-lightbox><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-split-view.png" data-lightbox-alt="SpecOps split view with markdown editor and AI chat panel"><img src="../assets/spec-ops-main-screen-split-view.png" alt="SpecOps split view with markdown editor and AI chat panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-themes.png" data-lightbox-alt="SpecOps themes panel"><img src="../assets/spec-ops-main-screen-themes.png" alt="SpecOps themes panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen-logs.png" data-lightbox-alt="SpecOps logs panel"><img src="../assets/spec-ops-main-screen-logs.png" alt="SpecOps logs panel"></button><button type="button" class="photos-grid__item" data-lightbox-src="../assets/spec-ops-main-screen.png" data-lightbox-alt="SpecOps main workspace with editor tabs and project panel"><img src="../assets/spec-ops-main-screen.png" alt="SpecOps main workspace with editor tabs and project panel"></button></div></div></section>
+
+<section class="project-grid section section-gradient scroll-reveal" data-widget-type="project_grid">
+  <div class="container">
+    
+    
+    <div class="project-grid__grid" style="">
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Repository</p>
+          
+          <h3 class="project-card__title">GitHub</h3>
+          <p class="project-card__desc">Source code, issues, and release notes.</p>
+          <ul class="project-card__tags"><li>Open source</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/SpecOps" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+      </article>
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Documentation</p>
+          
+          <h3 class="project-card__title">Docs</h3>
+          <p class="project-card__desc">Architecture overview, persistence model, and coding-agent guide.</p>
+          <ul class="project-card__tags"><li>Technical</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/SpecOps/blob/master/docs/architecture.md" target="_blank" rel="noopener noreferrer">Docs</a></p>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer section section-gradient" id="footer"><div class="container"><p class="footer-copyright">All projects are of MIT or BSD-3-Clause licenses.</p></div></footer>
+  <script type="application/json" id="site-widgets-config">{"scroll_reveal":{"respect_reduced_motion":true,"root_margin":"0px 0px -5% 0px","threshold":0.12},"carousel":{"swipe_threshold_px":30,"keyboard_navigation":true},"split_widget":{"keyboard_navigation":false}}</script>
+  <script src="../scroll-reveal.js" defer></script>
+  
+  
+  <script src="../image-lightbox.js" defer></script>
+  <script src="../nav.js" defer></script>
+</body>
+</html>

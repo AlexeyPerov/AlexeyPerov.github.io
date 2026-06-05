@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity Tools</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700%7cRoboto:400,400i,700&amp;display=swap" rel="stylesheet">
+  <meta name="description" content="Open-source Unity editor tools for asset health, dependencies, textures, materials, and Addressables.">
+  <link rel="canonical" href="https://alexeyperov.github.io/unity-tools/">
+  <meta property="og:title" content="Unity Tools">
+  <meta property="og:description" content="Open-source Unity editor tools for asset health, dependencies, textures, materials, and Addressables.">
+  <meta property="og:url" content="https://alexeyperov.github.io/unity-tools/">
+  <meta property="og:type" content="website">
+  
+  <meta name="theme-color" content="#4d8dff">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unity Tools">
+  <meta name="twitter:description" content="Open-source Unity editor tools for asset health, dependencies, textures, materials, and Addressables.">
+  
+  <style>
+    :root {
+      --font-heading: "Quicksand", sans-serif;
+      --font-body: "Roboto", sans-serif;
+      --accent: #4d8dff;
+      --accent-muted: #2a5fcc;
+      --follow-us-gradient: radial-gradient(ellipse 100% 60% at 50% 100%, #1a2240 0%, #0c0e14 70%);
+      --footer-gradient: linear-gradient(180deg, #151821 0%, #080a10 100%);
+      --intro-gradient: radial-gradient(ellipse 120% 80% at 50% -20%, #1e2840 0%, #0c0e14 72%);
+      --line: #2d3348;
+      --page-bg: #0c0e14;
+      --photos-gradient: linear-gradient(180deg, #151821 0%, #0c0e14 100%);
+      --project-grid-gradient: linear-gradient(180deg, #0c0e14 0%, #151821 50%, #0c0e14 100%);
+      --social-button-background: linear-gradient(145deg, #1e2230 0%, #151821 100%);
+      --social-icon-facebook: #6bb6ff;
+      --social-icon-github: #f4f6fb;
+      --social-icon-linkedin: #4d8dff;
+      --surface: #151821;
+      --surface-strong: #1e2230;
+      --text-primary: #f4f6fb;
+      --text-secondary: #9aa3b8;
+      --widget-gradient: linear-gradient(145deg, #1a1f2e 0%, #12151f 100%);
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <noscript>
+    <style>
+      .scroll-reveal,
+      .scroll-reveal.scroll-reveal--visible {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+  
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner header-inner--no-brand">
+        
+        
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Site navigation">
+          
+          <a class="site-nav__link" href="../">Home</a>
+          
+          <a class="site-nav__link" href="./">Unity Tools</a>
+          
+          <a class="site-nav__link" href="../specops/">SpecOps</a>
+          
+          <a class="site-nav__link" href="../vibe/">Vibe</a>
+          
+          <a class="site-nav__link" href="../tools/">Tools</a>
+          
+        </nav>
+        
+      </div>
+    </div>
+  </header>
+  
+
+  <main id="main-content">
+    <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate"><div class="container center"><h1 id="intro_title">Unity Tools</h1><p>Tools that help keep Unity projects healthy — finding unused assets, missing references, texture issues, and Addressables problems.</p></div></section>
+
+<section class="widget-row section" id="dependencies-hunter-featured" data-widget-type="row"><div class="container widget-row-inner"><section class="catalog-showcase section section-gradient" id="apps" data-widget-type="apps_showcase">
+  <div class="container">
+    
+    <div class="catalog-apps-stack">
+      
+      <article class="offer-card catalog-app-card scroll-reveal catalog-app-card--title-in-header" style="background: linear-gradient(145deg, #1e2840 0%, #151821 55%, #0c0e14 100%)">
+        
+        <div class="catalog-app-card__header">
+          <h3 class="catalog-app-card__header-title">Unity Dependencies Hunter</h3>
+        </div>
+        
+        <div class="catalog-app-card__icon-row">
+          <div class="catalog-app-card__stat catalog-app-card__stat--left">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">715&#43;</span>
+            <span class="catalog-app-card__stat-line">GitHub stars</span>
+          </div>
+          <div class="catalog-app-card__icon-wrap">
+            <img class="catalog-app-icon" src="../assets/github-logo.png" alt="Unity Dependencies Hunter">
+          </div>
+          <div class="catalog-app-card__stat catalog-app-card__stat--right">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">Unity</span>
+            <span class="catalog-app-card__stat-line">Editor tool</span>
+          </div>
+        </div>
+        <div class="catalog-app-card__body">
+          
+          <div class="catalog-app-card__columns">
+            <p class="catalog-app-card__col">Finds unreferenced assets by scanning all files in your Unity project.</p>
+            <p class="catalog-app-card__col">Run from the Tools menu or project context menu; review full and unused-only analysis views before cleaning up.</p>
+          </div>
+        </div>
+        
+        <div class="catalog-carousel" data-catalog-carousel role="region" aria-roledescription="carousel" aria-label="App screenshots">
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--prev" type="button" aria-label="Previous screenshot">‹</button>
+          <div class="catalog-carousel__viewport">
+            <div class="catalog-carousel__track">
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/dependencies-hunter-project-analysis-all.png" alt="Unity Dependencies Hunter screenshot 1" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/dependencies-hunter-project-analysis-unused.png" alt="Unity Dependencies Hunter screenshot 2" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/dependencies-hunter-context-menu-result.png" alt="Unity Dependencies Hunter screenshot 3" loading="lazy" decoding="async">
+              </div>
+              
+            </div>
+          </div>
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--next" type="button" aria-label="Next screenshot">›</button>
+        </div>
+        
+        
+        <div class="catalog-app-card__stores">
+          
+          <a class="catalog-store-btn catalog-store-btn--custom" href="https://github.com/AlexeyPerov/Unity-Dependencies-Hunter" target="_blank" rel="noopener noreferrer" aria-label="Unity Dependencies Hunter on GitHub">
+            <img class="catalog-store-btn__icon" src="../assets/github-logo.png" alt="" decoding="async">
+          </a>
+          
+        </div>
+        
+        
+      </article>
+      
+    </div>
+  </div>
+</section></div></section>
+
+
+<section class="widget-row section" id="missing-references-hunter-featured" data-widget-type="row"><div class="container widget-row-inner"><section class="catalog-showcase section section-gradient" id="apps" data-widget-type="apps_showcase">
+  <div class="container">
+    
+    <div class="catalog-apps-stack">
+      
+      <article class="offer-card catalog-app-card scroll-reveal catalog-app-card--title-in-header" style="background: linear-gradient(145deg, #1e2840 0%, #151821 55%, #0c0e14 100%)">
+        
+        <div class="catalog-app-card__header">
+          <h3 class="catalog-app-card__header-title">Unity Missing References Hunter</h3>
+        </div>
+        
+        <div class="catalog-app-card__icon-row">
+          <div class="catalog-app-card__stat catalog-app-card__stat--left">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">98&#43;</span>
+            <span class="catalog-app-card__stat-line">GitHub stars</span>
+          </div>
+          <div class="catalog-app-card__icon-wrap">
+            <img class="catalog-app-icon" src="../assets/github-logo.png" alt="Unity Missing References Hunter">
+          </div>
+          <div class="catalog-app-card__stat catalog-app-card__stat--right">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">Unity</span>
+            <span class="catalog-app-card__stat-line">Editor tool</span>
+          </div>
+        </div>
+        <div class="catalog-app-card__body">
+          
+          <div class="catalog-app-card__columns">
+            <p class="catalog-app-card__col">Detects missing references by scanning asset GUIDs across the project.</p>
+            <p class="catalog-app-card__col">Find broken links before they surface as runtime errors or build failures.</p>
+          </div>
+        </div>
+        
+        <div class="catalog-carousel" data-catalog-carousel role="region" aria-roledescription="carousel" aria-label="App screenshots">
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--prev" type="button" aria-label="Previous screenshot">‹</button>
+          <div class="catalog-carousel__viewport">
+            <div class="catalog-carousel__track">
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/mrf-main_window.png" alt="Unity Missing References Hunter screenshot 1" loading="lazy" decoding="async">
+              </div>
+              
+            </div>
+          </div>
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--next" type="button" aria-label="Next screenshot">›</button>
+        </div>
+        
+        
+        <div class="catalog-app-card__stores">
+          
+          <a class="catalog-store-btn catalog-store-btn--custom" href="https://github.com/AlexeyPerov/Unity-MissingReferences-Hunter" target="_blank" rel="noopener noreferrer" aria-label="Unity Missing References Hunter on GitHub">
+            <img class="catalog-store-btn__icon" src="../assets/github-logo.png" alt="" decoding="async">
+          </a>
+          
+        </div>
+        
+        
+      </article>
+      
+    </div>
+  </div>
+</section></div></section>
+
+
+<section class="widget-row section" id="textures-hunter-featured" data-widget-type="row"><div class="container widget-row-inner"><section class="catalog-showcase section section-gradient" id="apps" data-widget-type="apps_showcase">
+  <div class="container">
+    
+    <div class="catalog-apps-stack">
+      
+      <article class="offer-card catalog-app-card scroll-reveal catalog-app-card--title-in-header" style="background: linear-gradient(145deg, #1e2840 0%, #151821 55%, #0c0e14 100%)">
+        
+        <div class="catalog-app-card__header">
+          <h3 class="catalog-app-card__header-title">Unity Textures Hunter</h3>
+        </div>
+        
+        <div class="catalog-app-card__icon-row">
+          <div class="catalog-app-card__stat catalog-app-card__stat--left">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">84&#43;</span>
+            <span class="catalog-app-card__stat-line">GitHub stars</span>
+          </div>
+          <div class="catalog-app-card__icon-wrap">
+            <img class="catalog-app-icon" src="../assets/github-logo.png" alt="Unity Textures Hunter">
+          </div>
+          <div class="catalog-app-card__stat catalog-app-card__stat--right">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">Unity</span>
+            <span class="catalog-app-card__stat-line">Editor tool</span>
+          </div>
+        </div>
+        <div class="catalog-app-card__body">
+          
+          <div class="catalog-app-card__columns">
+            <p class="catalog-app-card__col">Summary of all textures and atlases in a Unity project.</p>
+            <p class="catalog-app-card__col">Inspect sizes, formats, and atlas usage to optimize memory and build weight.</p>
+          </div>
+        </div>
+        
+        <div class="catalog-carousel" data-catalog-carousel role="region" aria-roledescription="carousel" aria-label="App screenshots">
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--prev" type="button" aria-label="Previous screenshot">‹</button>
+          <div class="catalog-carousel__viewport">
+            <div class="catalog-carousel__track">
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/th_atlases_screen.png" alt="Unity Textures Hunter screenshot 1" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/th_textures_screen.png" alt="Unity Textures Hunter screenshot 2" loading="lazy" decoding="async">
+              </div>
+              
+            </div>
+          </div>
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--next" type="button" aria-label="Next screenshot">›</button>
+        </div>
+        
+        
+        <div class="catalog-app-card__stores">
+          
+          <a class="catalog-store-btn catalog-store-btn--custom" href="https://github.com/AlexeyPerov/Unity-Textures-Hunter" target="_blank" rel="noopener noreferrer" aria-label="Unity Textures Hunter on GitHub">
+            <img class="catalog-store-btn__icon" src="../assets/github-logo.png" alt="" decoding="async">
+          </a>
+          
+        </div>
+        
+        
+      </article>
+      
+    </div>
+  </div>
+</section></div></section>
+
+
+<section class="widget-row section" id="unity-scanner-featured" data-widget-type="row"><div class="container widget-row-inner"><section class="catalog-showcase section section-gradient" id="apps" data-widget-type="apps_showcase">
+  <div class="container">
+    
+    <div class="catalog-apps-stack">
+      
+      <article class="offer-card catalog-app-card scroll-reveal catalog-app-card--title-in-header" style="background: linear-gradient(145deg, #1e2840 0%, #151821 55%, #0c0e14 100%)">
+        
+        <div class="catalog-app-card__header">
+          <h3 class="catalog-app-card__header-title">Unity Scanner</h3>
+        </div>
+        
+        <div class="catalog-app-card__icon-row">
+          <div class="catalog-app-card__stat catalog-app-card__stat--left">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">2&#43;</span>
+            <span class="catalog-app-card__stat-line">GitHub stars</span>
+          </div>
+          <div class="catalog-app-card__icon-wrap">
+            <img class="catalog-app-icon" src="../assets/github-logo.png" alt="Unity Scanner">
+          </div>
+          <div class="catalog-app-card__stat catalog-app-card__stat--right">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">Unity</span>
+            <span class="catalog-app-card__stat-line">Editor &amp; MCP</span>
+          </div>
+        </div>
+        <div class="catalog-app-card__body">
+          
+          <div class="catalog-app-card__columns">
+            <p class="catalog-app-card__col">Unified Editor and MCP tool for project health analysis across dependencies, materials, textures, addressables, and more.</p>
+            <p class="catalog-app-card__col">One entry point for the Hunter family of tools and automated project checks.</p>
+          </div>
+        </div>
+        
+        <div class="catalog-carousel" data-catalog-carousel role="region" aria-roledescription="carousel" aria-label="App screenshots">
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--prev" type="button" aria-label="Previous screenshot">‹</button>
+          <div class="catalog-carousel__viewport">
+            <div class="catalog-carousel__track">
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/us-summary-table.png" alt="Unity Scanner screenshot 1" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/us-menu-shaders.png" alt="Unity Scanner screenshot 2" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/us-buildlayout.png" alt="Unity Scanner screenshot 3" loading="lazy" decoding="async">
+              </div>
+              
+            </div>
+          </div>
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--next" type="button" aria-label="Next screenshot">›</button>
+        </div>
+        
+        
+        <div class="catalog-app-card__stores">
+          
+          <a class="catalog-store-btn catalog-store-btn--custom" href="https://github.com/AlexeyPerov/Unity-Scanner" target="_blank" rel="noopener noreferrer" aria-label="Unity Scanner on GitHub">
+            <img class="catalog-store-btn__icon" src="../assets/github-logo.png" alt="" decoding="async">
+          </a>
+          
+        </div>
+        
+        
+      </article>
+      
+    </div>
+  </div>
+</section></div></section>
+
+
+<section class="project-grid section section-gradient scroll-reveal" data-widget-type="project_grid">
+  <div class="container">
+    
+    
+    <div class="project-grid__grid" style="">
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Unity Editor</p>
+          
+          <h3 class="project-card__title">Unity-Addressables-BuildLayout-Inspector</h3>
+          <p class="project-card__desc">Analyze Addressables build layouts — bundles, groups, assets, duplicates, and cross-build comparisons.</p>
+          <ul class="project-card__tags"><li>Unity</li><li>Addressables</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/Unity-Addressables-BuildLayout-Inspector" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+      </article>
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Unity Editor</p>
+          
+          <h3 class="project-card__title">Unity-Materials-Hunter</h3>
+          <p class="project-card__desc">Summary of all materials and renderers in a Unity project.</p>
+          <ul class="project-card__tags"><li>Unity</li><li>Editor</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/Unity-Materials-Hunter" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+      </article>
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Unity Editor</p>
+          
+          <h3 class="project-card__title">Unity-Asset-Inspector</h3>
+          <p class="project-card__desc">Inspect asset references, serialized dependencies, and optional Addressables/bundle context.</p>
+          <ul class="project-card__tags"><li>Unity</li><li>Editor</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/Unity-Asset-Inspector" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+      </article>
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Unity Editor</p>
+          
+          <h3 class="project-card__title">Unity-Lite-Editor-Coroutines</h3>
+          <p class="project-card__desc">Lightweight alternative to Unity Editor Coroutines.</p>
+          <ul class="project-card__tags"><li>Unity</li><li>Editor</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/Unity-Lite-Editor-Coroutines" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer section section-gradient" id="footer"><div class="container"><p class="footer-copyright">All projects are of MIT or BSD-3-Clause licenses.</p></div></footer>
+  <script type="application/json" id="site-widgets-config">{"scroll_reveal":{"respect_reduced_motion":true,"root_margin":"0px 0px -5% 0px","threshold":0.12},"carousel":{"swipe_threshold_px":30,"keyboard_navigation":true},"split_widget":{"keyboard_navigation":false}}</script>
+  <script src="../scroll-reveal.js" defer></script>
+  <script src="../catalog-carousel.js" defer></script>
+  
+  
+  <script src="../nav.js" defer></script>
+</body>
+</html>
