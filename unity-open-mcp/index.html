@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity Open MCP</title>
+  <link rel="icon" type="image/png" href="../assets/github-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700%7cRoboto:400,400i,700&amp;display=swap" rel="stylesheet">
+  <meta name="description" content="Unity Open MCP — connect AI agents to Unity projects with a bridge &#43; gate workflow: make changes, run validation, inspect results, and iterate safely.">
+  <link rel="canonical" href="https://alexeyperov.github.io/unity-open-mcp/">
+  <meta property="og:title" content="Unity Open MCP">
+  <meta property="og:description" content="Unity Open MCP — connect AI agents to Unity projects with a bridge &#43; gate workflow: make changes, run validation, inspect results, and iterate safely.">
+  <meta property="og:url" content="https://alexeyperov.github.io/unity-open-mcp/">
+  <meta property="og:type" content="website">
+  
+  <meta name="theme-color" content="#4d8dff">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unity Open MCP">
+  <meta name="twitter:description" content="Unity Open MCP — connect AI agents to Unity projects with a bridge &#43; gate workflow: make changes, run validation, inspect results, and iterate safely.">
+  
+  <style>
+    :root {
+      --font-heading: "Quicksand", sans-serif;
+      --font-body: "Roboto", sans-serif;
+      --accent: #4d8dff;
+      --accent-muted: #2a5fcc;
+      --follow-us-gradient: radial-gradient(ellipse 100% 60% at 50% 100%, #1a2240 0%, #0c0e14 70%);
+      --footer-gradient: linear-gradient(180deg, #151821 0%, #080a10 100%);
+      --intro-gradient: radial-gradient(ellipse 120% 80% at 50% -20%, #1e2840 0%, #0c0e14 72%);
+      --line: #2d3348;
+      --page-bg: #0c0e14;
+      --photos-gradient: linear-gradient(180deg, #151821 0%, #0c0e14 100%);
+      --project-grid-gradient: linear-gradient(180deg, #0c0e14 0%, #151821 50%, #0c0e14 100%);
+      --social-button-background: linear-gradient(145deg, #1e2230 0%, #151821 100%);
+      --social-icon-facebook: #6bb6ff;
+      --social-icon-github: #f4f6fb;
+      --social-icon-linkedin: #4d8dff;
+      --surface: #151821;
+      --surface-strong: #1e2230;
+      --text-primary: #f4f6fb;
+      --text-secondary: #9aa3b8;
+      --widget-gradient: linear-gradient(145deg, #1a1f2e 0%, #12151f 100%);
+    }
+    .scroll-reveal--immediate,
+    .scroll-reveal--immediate.scroll-reveal--visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.has-bg-effect { position: relative; }
+    .page-bg-effect {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .page-bg-effect__canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="has-bg-effect has-bg-effect--magic-dust compact-sections">
+  
+  <div class="page-bg-effect page-bg-effect--magic-dust" aria-hidden="true">
+    <canvas class="page-bg-effect__canvas"></canvas>
+  </div>
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <noscript>
+    <style>
+      .scroll-reveal,
+      .scroll-reveal.scroll-reveal--visible {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+  
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner header-inner--no-brand">
+        
+        
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Site navigation">
+          
+          <a class="site-nav__link" href="../">Home</a>
+          
+          <a class="site-nav__link site-nav__link--active" href="./" aria-current="page">Unity Open MCP</a>
+          
+          <a class="site-nav__link" href="../unity-hub-pro/">Unity Hub Pro</a>
+          
+          <a class="site-nav__link" href="../unity-tools/">Unity Tools</a>
+          
+          <a class="site-nav__link" href="../unity-scanner/">Unity Scanner</a>
+          
+          <a class="site-nav__link" href="../specops/">SpecOps</a>
+          
+          <a class="site-nav__link" href="../tools/">Apps / Tools</a>
+          
+        </nav>
+        
+      </div>
+    </div>
+  </header>
+  
+
+  <main id="main-content">
+    <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate"><div class="container center"><h1 id="intro_title">Unity Open MCP</h1><p>Connect AI agents to Unity projects with a bridge &#43; gate workflow: make changes, run validation, inspect results, and iterate safely.</p><p>A Model Context Protocol server and Unity bridge expose ~160 tools so an assistant can edit, validate, and inspect a Unity project from Cursor, Claude Desktop, OpenCode, ZCode, and other MCP clients.</p><p class="intro__cta-wrap"><a class="intro__cta" href="https://github.com/AlexeyPerov/unity-open-mcp" target="_blank" rel="noopener noreferrer">GitHub</a></p></div></section>
+
+<section class="widget-row section" id="unity-open-mcp-featured" data-widget-type="row"><div class="container widget-row-inner"><section class="catalog-showcase section section-gradient" id="apps" data-widget-type="apps_showcase">
+  <div class="container">
+    
+    <div class="catalog-apps-stack">
+      
+      <article class="offer-card catalog-app-card scroll-reveal catalog-app-card--title-in-header" style="background: linear-gradient(145deg, #1e2840 0%, #151821 55%, #0c0e14 100%)">
+        
+        <div class="catalog-app-card__header">
+          <h3 class="catalog-app-card__header-title">Unity Open MCP</h3>
+        </div>
+        
+        <div class="catalog-app-card__icon-row">
+          <div class="catalog-app-card__stat catalog-app-card__stat--left">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">~200</span>
+            <span class="catalog-app-card__stat-line">MCP tools</span>
+          </div>
+          <div class="catalog-app-card__icon-wrap">
+            <img class="catalog-app-icon" src="../assets/github-logo.png" alt="Unity Open MCP">
+          </div>
+          <div class="catalog-app-card__stat catalog-app-card__stat--right">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">Unity</span>
+            <span class="catalog-app-card__stat-line">2022.3 LTS&#43;</span>
+          </div>
+        </div>
+        <div class="catalog-app-card__body">
+          
+          <div class="catalog-app-card__columns">
+            <p class="catalog-app-card__col">MCP server &#43; Unity bridge that lets AI agents edit, validate, and inspect Unity projects safely.</p>
+            <p class="catalog-app-card__col">Live bridge with batch/offline fallback, a gate workflow with checkpoints and regression checks, and ~200 typed tools across the editor.</p>
+          </div>
+        </div>
+        
+        <div class="catalog-carousel" data-catalog-carousel role="region" aria-roledescription="carousel" aria-label="App screenshots">
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--prev" type="button" aria-label="Previous screenshot">‹</button>
+          <div class="catalog-carousel__viewport">
+            <div class="catalog-carousel__track">
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uomcp-bridge-tools.png" alt="Unity Open MCP screenshot 1" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uomcp-bridge-status.png" alt="Unity Open MCP screenshot 2" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uomcp-wizard.png" alt="Unity Open MCP screenshot 3" loading="lazy" decoding="async">
+              </div>
+              
+            </div>
+          </div>
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--next" type="button" aria-label="Next screenshot">›</button>
+        </div>
+        
+        
+        <div class="catalog-app-card__stores">
+          
+          <a class="catalog-store-btn catalog-store-btn--custom" href="https://github.com/AlexeyPerov/unity-open-mcp" target="_blank" rel="noopener noreferrer" aria-label="Unity Open MCP on GitHub">
+            <img class="catalog-store-btn__icon" src="../assets/github-logo.png" alt="" decoding="async">
+          </a>
+          
+        </div>
+        
+        
+      </article>
+      
+    </div>
+  </div>
+</section></div></section>
+
+<section class="offers section section-gradient scroll-reveal" id="offers"><div class="container"><h2 id="offers_title" class="center">Features</h2><div class="offers-grid"><article class="offer-card"><h3>Safe mutation workflow</h3><p>Every mutating tool runs validation, checkpoints, deltas, reference scans, and regression checks before applying — with targeted fixes and impact previews.</p></article><article class="offer-card"><h3>Asset intelligence</h3><p>Reserialize assets, read and search the structured asset tree, and analyze references across prefabs, scenes, and ScriptableObjects.</p></article><article class="offer-card"><h3>Live &#43; batch &#43; offline routing</h3><p>Calls prefer the live Unity bridge, fall back to headless batch mode for supported tools, or use disk readers for offline operations.</p></article><article class="offer-card"><h3>Typed editor surface</h3><p>~100 typed tools for scenes, GameObjects, components, materials, prefabs, packages, build settings, profiler, and project settings.</p></article><article class="offer-card"><h3>Compile-gated domain packs</h3><p>Navigation, Input System, ProBuilder, Particle System, Animation, and Splines tools compile in only when their Unity package is present.</p></article><article class="offer-card"><h3>Session tool-group visibility</h3><p>Activate only the tool groups you need per session to keep the prompt surface small; the server emits tools/list_changed when the set changes.</p></article></div></div></section>
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="meta-tools" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Always-on meta-tools</h2>
+    <p class="reference-panel-section__intro center">Session-level tools available in every session, independent of tool-group activation. They enumerate capabilities, rules, and live editor state.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Always-on meta-tools"><label class="reference-panel__select-wrap"><span class="visually-hidden">Always-on meta-tools</span><select class="reference-panel__select" aria-label="Always-on meta-tools"><option value="meta-tools-0" selected>capabilities</option><option value="meta-tools-1">list_rules</option><option value="meta-tools-2">manage_tools</option><option value="meta-tools-3">generate_skill</option><option value="meta-tools-4">read_compile_errors</option><option value="meta-tools-5">pull_events</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Always-on meta-tools"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="meta-tools-0" role="tab" aria-selected="true">capabilities</button></li><li><button type="button" class="split-widget__tab" data-target="meta-tools-1" role="tab" aria-selected="false">list_rules</button></li><li><button type="button" class="split-widget__tab" data-target="meta-tools-2" role="tab" aria-selected="false">manage_tools</button></li><li><button type="button" class="split-widget__tab" data-target="meta-tools-3" role="tab" aria-selected="false">generate_skill</button></li><li><button type="button" class="split-widget__tab" data-target="meta-tools-4" role="tab" aria-selected="false">read_compile_errors</button></li><li><button type="button" class="split-widget__tab" data-target="meta-tools-5" role="tab" aria-selected="false">pull_events</button></li></ul></nav><div class="split-widget__panels"><div id="meta-tools-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_capabilities</h3><p class="reference-panel__description">List the available surfaces: tools, rules, and fixes. Filter by kind (tools/rules/fixes) and optionally include planned-but-unbuilt capabilities.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>kind</dt><dd class="reference-panel__arg-type">&quot;tools&quot; | &quot;rules&quot; | &quot;fixes&quot;</dd><dd class="reference-panel__arg-desc">Filter to a single surface. Omit to return all three together.</dd></div><div class="reference-panel__arg"><dt>include_planned</dt><dd class="reference-panel__arg-type">boolean</dd><dd class="reference-panel__arg-desc">Include planned (unimplemented) items. Default true.</dd></div></dl></div></div><div id="meta-tools-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_list_rules</h3><p class="reference-panel__description">Enumerate validation rules, optionally filtered by asset kind or file extension, omitting planned rules when requested.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>asset_kind</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Filter to rules that declare this asset kind (e.g. prefab, scene, material).</dd></div><div class="reference-panel__arg"><dt>extension</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Filter by file extension (e.g. .prefab). Case-insensitive.</dd></div></dl></div></div><div id="meta-tools-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_manage_tools</h3><p class="reference-panel__description">Activate or deactivate a tool group for this session (list_groups / activate / deactivate / reset). State is ephemeral and in-memory; resets to core-only on restart.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>action</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">list_groups | activate | deactivate | reset.</dd></div><div class="reference-panel__arg"><dt>group</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Group id (required for activate/deactivate).</dd></div></dl><pre class="reference-panel__code code-block"><code>{ &quot;action&quot;: &quot;activate&quot;, &quot;group&quot;: &quot;navigation&quot; }</code></pre></div></div><div id="meta-tools-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_generate_skill</h3><p class="reference-panel__description">Generate a SKILL.md playbook for the connected client (cursor/claude/opencode/agents), previewing or writing it to disk.</p></div></div><div id="meta-tools-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_read_compile_errors</h3><p class="reference-panel__description">Read the tail of the Unity Editor.log to surface compiler errors and assembly-resolution failures as structured diagnostics.</p></div></div><div id="meta-tools-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_pull_events</h3><p class="reference-panel__description">Drain buffered console and editor-state events (SSE/poll feed) for live UIs and validation suites.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>max_events</dt><dd class="reference-panel__arg-type">integer</dd><dd class="reference-panel__arg-desc">Max events to return per call (1–1000).</dd></div></dl></div></div></div></div></div></div>
+  </div>
+</section>
+
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="core-gate-tools" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Core, Gate &amp; Verify</h2>
+    <p class="reference-panel-section__intro center">The engine room: reflection and live execution, plus the gate workflow that validates every mutation. Gate tools return issues and offer dry-runnable fixes.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Core, Gate &amp; Verify"><label class="reference-panel__select-wrap"><span class="visually-hidden">Core, Gate &amp; Verify</span><select class="reference-panel__select" aria-label="Core, Gate &amp; Verify"><option value="core-gate-tools-0" selected>ping</option><option value="core-gate-tools-1">execute_csharp</option><option value="core-gate-tools-2">invoke_method</option><option value="core-gate-tools-3">find_members</option><option value="core-gate-tools-4">compile_check</option><option value="core-gate-tools-5">validate_edit</option><option value="core-gate-tools-6">checkpoint_create</option><option value="core-gate-tools-7">delta</option><option value="core-gate-tools-8">find_references</option><option value="core-gate-tools-9">scan_paths</option><option value="core-gate-tools-10">apply_fix</option><option value="core-gate-tools-11">scan_all</option><option value="core-gate-tools-12">regression_check</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Core, Gate &amp; Verify"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="core-gate-tools-0" role="tab" aria-selected="true">ping</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-1" role="tab" aria-selected="false">execute_csharp</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-2" role="tab" aria-selected="false">invoke_method</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-3" role="tab" aria-selected="false">find_members</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-4" role="tab" aria-selected="false">compile_check</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-5" role="tab" aria-selected="false">validate_edit</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-6" role="tab" aria-selected="false">checkpoint_create</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-7" role="tab" aria-selected="false">delta</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-8" role="tab" aria-selected="false">find_references</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-9" role="tab" aria-selected="false">scan_paths</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-10" role="tab" aria-selected="false">apply_fix</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-11" role="tab" aria-selected="false">scan_all</button></li><li><button type="button" class="split-widget__tab" data-target="core-gate-tools-12" role="tab" aria-selected="false">regression_check</button></li></ul></nav><div class="split-widget__panels"><div id="core-gate-tools-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_ping</h3><p class="reference-panel__description">Health-check the live Unity bridge; returns editor and bridge status.</p></div></div><div id="core-gate-tools-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_execute_csharp</h3><p class="reference-panel__description">Run an arbitrary C# snippet in the editor with injected Refs[] and return the serialized result graph.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>code</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">C# source. Use return x; to produce output.</dd></div></dl></div></div><div id="core-gate-tools-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_invoke_method</h3><p class="reference-panel__description">Invoke a static or instance method by type and name, with JSON arguments and optional generic type parameters.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>type_name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Fully qualified type name.</dd></div><div class="reference-panel__arg"><dt>method_name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Method name.</dd></div></dl></div></div><div id="core-gate-tools-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_find_members</h3><p class="reference-panel__description">Search loaded assemblies for types/members/properties/methods by substring, with optional signature metadata.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>query</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Substring filter on type or member name.</dd></div><div class="reference-panel__arg"><dt>kind</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">type | method | property | all.</dd></div></dl></div></div><div id="core-gate-tools-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_compile_check</h3><p class="reference-panel__description">Wait for compilation to settle and report whether it succeeded. Route-pinned to batch mode.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>timeout_ms</dt><dd class="reference-panel__arg-type">integer</dd><dd class="reference-panel__arg-desc">Max wait for compilation to settle.</dd></div></dl></div></div><div id="core-gate-tools-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_validate_edit</h3><p class="reference-panel__description">Run verify rules against the given asset paths (auto-selecting categories) and return issues with severities.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>paths</dt><dd class="reference-panel__arg-type">string[]</dd><dd class="reference-panel__arg-desc">Asset paths to validate.</dd></div><div class="reference-panel__arg"><dt>detail</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">summary | normal | verbose.</dd></div></dl></div></div><div id="core-gate-tools-6" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_checkpoint_create</h3><p class="reference-panel__description">Snapshot a scope of paths (or whole project) for a later delta comparison.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>paths</dt><dd class="reference-panel__arg-type">string[]</dd><dd class="reference-panel__arg-desc">Scope; empty = whole-project summary.</dd></div><div class="reference-panel__arg"><dt>label</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Optional label.</dd></div></dl></div></div><div id="core-gate-tools-7" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_delta</h3><p class="reference-panel__description">Re-validate the scope of a checkpoint and report what changed since it was created.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>checkpoint_id</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Checkpoint id from checkpoint_create.</dd></div></dl></div></div><div id="core-gate-tools-8" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_find_references</h3><p class="reference-panel__description">Find assets referencing a target by asset path or GUID, grouped by kind/folder, with verbose field locations.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>asset_path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Asset path (or use guid).</dd></div></dl></div></div><div id="core-gate-tools-9" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_scan_paths</h3><p class="reference-panel__description">Scan specific asset paths with selected verify rules; auto-selects categories from paths when omitted.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>paths</dt><dd class="reference-panel__arg-type">string[]</dd><dd class="reference-panel__arg-desc">Asset paths to scan.</dd></div></dl></div></div><div id="core-gate-tools-10" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_apply_fix</h3><p class="reference-panel__description">Apply (or dry-run) a fix action for an issue id — e.g. remove_missing_script or relink_broken_guid.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>issue_id</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Issue key from validate_edit or scan_paths.</dd></div><div class="reference-panel__arg"><dt>dry_run</dt><dd class="reference-panel__arg-type">boolean</dd><dd class="reference-panel__arg-desc">Preview without applying. Default true.</dd></div></dl></div></div><div id="core-gate-tools-11" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_scan_all</h3><p class="reference-panel__description">Run every verify rule across the whole project and return a JSON report (optionally written to disk).</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>fail_on_severity</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">error | warn | info | verbose | never.</dd></div></dl></div></div><div id="core-gate-tools-12" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_regression_check</h3><p class="reference-panel__description">Compare current scan results against a saved baseline and fail when issue counts exceed thresholds.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>baseline_path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Path to a baseline JSON file.</dd></div></dl></div></div></div></div></div></div>
+  </div>
+</section>
+
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="asset-intelligence" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Asset Intelligence</h2>
+    <p class="reference-panel-section__intro center">Structured reads and mutations on the asset database — no Unity play mode or scene edits required.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Asset Intelligence"><label class="reference-panel__select-wrap"><span class="visually-hidden">Asset Intelligence</span><select class="reference-panel__select" aria-label="Asset Intelligence"><option value="asset-intelligence-0" selected>reserialize</option><option value="asset-intelligence-1">read_asset</option><option value="asset-intelligence-2">search_assets</option><option value="asset-intelligence-3">list_assets</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Asset Intelligence"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="asset-intelligence-0" role="tab" aria-selected="true">reserialize</button></li><li><button type="button" class="split-widget__tab" data-target="asset-intelligence-1" role="tab" aria-selected="false">read_asset</button></li><li><button type="button" class="split-widget__tab" data-target="asset-intelligence-2" role="tab" aria-selected="false">search_assets</button></li><li><button type="button" class="split-widget__tab" data-target="asset-intelligence-3" role="tab" aria-selected="false">list_assets</button></li></ul></nav><div class="split-widget__panels"><div id="asset-intelligence-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_reserialize</h3><p class="reference-panel__description">Round-trip reserialize explicit asset paths (.prefab/.unity/.asset/.mat/.controller/.anim); optionally include companion .meta files.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>paths</dt><dd class="reference-panel__arg-type">string[]</dd><dd class="reference-panel__arg-desc">Asset paths to reserialize.</dd></div></dl></div></div><div id="asset-intelligence-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_read_asset</h3><p class="reference-panel__description">Read a text-serialized YAML asset as a folded tree, with summary/normal/verbose detail and component/path drill-downs.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>asset_path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Asset path (.prefab/.unity/.asset/.mat/.controller/.anim).</dd></div></dl></div></div><div id="asset-intelligence-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_search_assets</h3><p class="reference-panel__description">Search YAML assets by name, component, type, or GUID across a folder, returning matched files with optional per-file object listings.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Substring filter on file or GameObject name.</dd></div><div class="reference-panel__arg"><dt>component</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Substring filter on component/script name.</dd></div></dl></div></div><div id="asset-intelligence-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_list_assets</h3><p class="reference-panel__description">List assets under a folder, optionally filtered by asset kind, with per-folder sampling to control verbosity.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>folder</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Folder to list under (default Assets).</dd></div><div class="reference-panel__arg"><dt>type</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Comma-separated asset kinds (e.g. prefab,scene).</dd></div></dl></div></div></div></div></div></div>
+  </div>
+</section>
+
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="typed-editor" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Typed editor surface</h2>
+    <p class="reference-panel-section__intro center">A representative slice of the ~100 typed tools across the editor — assets, materials, prefabs, GameObjects, components, scenes, packages, scripts, build, and project settings.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Typed editor surface"><label class="reference-panel__select-wrap"><span class="visually-hidden">Typed editor surface</span><select class="reference-panel__select" aria-label="Typed editor surface"><option value="typed-editor-0" selected>assets_create_folder</option><option value="typed-editor-1">material_set_property</option><option value="typed-editor-2">prefab_open</option><option value="typed-editor-3">gameobject_create</option><option value="typed-editor-4">component_modify</option><option value="typed-editor-5">scene_open</option><option value="typed-editor-6">package_add</option><option value="typed-editor-7">script_write</option><option value="typed-editor-8">profiler_start</option><option value="typed-editor-9">build_start</option><option value="typed-editor-10">settings_set_player</option><option value="typed-editor-11">selection_set</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Typed editor surface"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="typed-editor-0" role="tab" aria-selected="true">assets_create_folder</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-1" role="tab" aria-selected="false">material_set_property</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-2" role="tab" aria-selected="false">prefab_open</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-3" role="tab" aria-selected="false">gameobject_create</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-4" role="tab" aria-selected="false">component_modify</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-5" role="tab" aria-selected="false">scene_open</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-6" role="tab" aria-selected="false">package_add</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-7" role="tab" aria-selected="false">script_write</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-8" role="tab" aria-selected="false">profiler_start</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-9" role="tab" aria-selected="false">build_start</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-10" role="tab" aria-selected="false">settings_set_player</button></li><li><button type="button" class="split-widget__tab" data-target="typed-editor-11" role="tab" aria-selected="false">selection_set</button></li></ul></nav><div class="split-widget__panels"><div id="typed-editor-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_assets_create_folder</h3><p class="reference-panel__description">Create one or more folders under an existing Assets/-rooted parent, with name validation.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>parent_folder_path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Existing parent starting with Assets/.</dd></div><div class="reference-panel__arg"><dt>new_folder_name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">New folder name.</dd></div></dl></div></div><div id="typed-editor-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_material_set_property</h3><p class="reference-panel__description">Set a shader property (color/float/int/vector/texture) on a material asset or a renderer&#39;s shared material.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>property</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Shader property name.</dd></div><div class="reference-panel__arg"><dt>type</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">color | float | int | vector | texture.</dd></div><div class="reference-panel__arg"><dt>value</dt><dd class="reference-panel__arg-type">any</dd><dd class="reference-panel__arg-desc">New value; shape depends on type.</dd></div></dl></div></div><div id="typed-editor-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_prefab_open</h3><p class="reference-panel__description">Open a prefab asset in the edit stage for isolated editing.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>prefab_asset_path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Prefab asset path to open.</dd></div></dl></div></div><div id="typed-editor-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_gameobject_create</h3><p class="reference-panel__description">Create a GameObject (optionally a primitive) at a path with transform and parent options.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Name for the new GameObject.</dd></div><div class="reference-panel__arg"><dt>primitive_type</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Cube/Sphere/Capsule/Cylinder/Plane/Quad, or omit for empty.</dd></div></dl></div></div><div id="typed-editor-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_component_modify</h3><p class="reference-panel__description">Patch serialized fields on a component (resolved by host path/name/instance_id), including object references and enum-by-name.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>type_name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Component type to modify.</dd></div><div class="reference-panel__arg"><dt>fields</dt><dd class="reference-panel__arg-type">array</dd><dd class="reference-panel__arg-desc">Serialized-property patches [{ path, value }].</dd></div></dl></div></div><div id="typed-editor-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_scene_open</h3><p class="reference-panel__description">Open a scene single or additive, with a scene-dirty guard to avoid losing unsaved changes.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Asset path of the scene (.unity).</dd></div><div class="reference-panel__arg"><dt>mode</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">single | additive.</dd></div></dl></div></div><div id="typed-editor-6" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_package_add</h3><p class="reference-panel__description">Add a UPM package by id, version, Git URL, or local path/tarball; gate-validates against Packages/manifest.json.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>package_id</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Package specifier (id, id@ver, git URL, file: path).</dd></div></dl></div></div><div id="typed-editor-7" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_script_write</h3><p class="reference-panel__description">Write a .cs file with Roslyn pre-write validation; parse errors return validation_failed and the file is not written.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>file_path</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Project-relative .cs path.</dd></div><div class="reference-panel__arg"><dt>content</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Full C# source.</dd></div></dl></div></div><div id="typed-editor-8" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_profiler_start</h3><p class="reference-panel__description">Start the Unity Profiler and optionally open the Profiler window for live capture.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>open_window</dt><dd class="reference-panel__arg-type">boolean</dd><dd class="reference-panel__arg-desc">Also open the Profiler window. Default true.</dd></div></dl></div></div><div id="typed-editor-9" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_build_start</h3><p class="reference-panel__description">Start a player build. BuildPipeline.BuildPlayer is on the default deny list, so this requires gate: off + confirm_bypass.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>scenes</dt><dd class="reference-panel__arg-type">string[]</dd><dd class="reference-panel__arg-desc">Scene paths to include.</dd></div><div class="reference-panel__arg"><dt>location_path_name</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">Output path.</dd></div></dl></div></div><div id="typed-editor-10" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_settings_set_player</h3><p class="reference-panel__description">Mutate Player settings; uses the restart_then_settle gate strategy because it may domain-reload.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>fields</dt><dd class="reference-panel__arg-type">array</dd><dd class="reference-panel__arg-desc">Player-settings field patches.</dd></div></dl></div></div><div id="typed-editor-11" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity_open_mcp_selection_set</h3><p class="reference-panel__description">Set the editor selection from scene objects or disk assets, or clear it entirely.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>targets</dt><dd class="reference-panel__arg-type">array</dd><dd class="reference-panel__arg-desc">Multi-selection list of { instance_id | asset_path | path | name }.</dd></div></dl></div></div></div></div></div></div>
+  </div>
+</section>
+
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="domain-extensions" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Domain extension packs</h2>
+    <p class="reference-panel-section__intro center">Optional tool groups that compile in only when their Unity package is present. Gated by versionDefines on the asmdef plus per-domain defineConstraints (UNITY_OPEN_MCP_EXT_&lt;DOMAIN&gt;). Default OFF; activate per session via manage_tools.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Domain extension packs"><label class="reference-panel__select-wrap"><span class="visually-hidden">Domain extension packs</span><select class="reference-panel__select" aria-label="Domain extension packs"><option value="domain-extensions-0" selected>navigation (NavMesh)</option><option value="domain-extensions-1">input-system</option><option value="domain-extensions-2">probuilder</option><option value="domain-extensions-3">particle-system</option><option value="domain-extensions-4">animation</option><option value="domain-extensions-5">splines</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Domain extension packs"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="domain-extensions-0" role="tab" aria-selected="true">navigation (NavMesh)</button></li><li><button type="button" class="split-widget__tab" data-target="domain-extensions-1" role="tab" aria-selected="false">input-system</button></li><li><button type="button" class="split-widget__tab" data-target="domain-extensions-2" role="tab" aria-selected="false">probuilder</button></li><li><button type="button" class="split-widget__tab" data-target="domain-extensions-3" role="tab" aria-selected="false">particle-system</button></li><li><button type="button" class="split-widget__tab" data-target="domain-extensions-4" role="tab" aria-selected="false">animation</button></li><li><button type="button" class="split-widget__tab" data-target="domain-extensions-5" role="tab" aria-selected="false">splines</button></li></ul></nav><div class="split-widget__panels"><div id="domain-extensions-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">group: navigation</h3><p class="reference-panel__description">Gated on com.unity.ai.navigation. Add/bake NavMesh surfaces, modifiers, modifier volumes, links, and agents; list and modify nav data.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>tools</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">navigation_surface_bake, navigation_agent_set_destination, navigation_modify, … (11 tools).</dd></div></dl></div></div><div id="domain-extensions-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">group: input-system</h3><p class="reference-panel__description">Gated on com.unity.inputsystem. Build InputActionAssets, action maps, actions, bindings, composites, and control schemes.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>tools</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">inputsystem_asset_create, inputsystem_action_add, inputsystem_binding_composite_add, … (7 tools).</dd></div></dl></div></div><div id="domain-extensions-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">group: probuilder</h3><p class="reference-panel__description">Gated on com.unity.probuilder. Create shapes, inspect mesh info, extrude, set face materials; probuilder_delete_faces is the lone destructive tool.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>tools</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">probuilder_create_shape, probuilder_extrude, probuilder_set_face_material, … (5 tools).</dd></div></dl></div></div><div id="domain-extensions-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">group: particle-system</h3><p class="reference-panel__description">Gated on UnityEngine.ParticleSystemModule. Read and modify particle system modules.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>tools</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">particle_system_get, particle_system_modify (2 tools).</dd></div></dl></div></div><div id="domain-extensions-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">group: animation</h3><p class="reference-panel__description">Gated on com.unity.modules.animation. Create and edit AnimationClips and AnimatorControllers, including keyframes, layers, states, and transitions.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>tools</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">animation_create/modify, animator_create/modify, … (6 tools).</dd></div></dl></div></div><div id="domain-extensions-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">group: splines</h3><p class="reference-panel__description">Gated on com.unity.splines. Create spline containers, add/modify knots, set tangent modes, and evaluate splines.</p><dl class="reference-panel__args"><div class="reference-panel__arg"><dt>tools</dt><dd class="reference-panel__arg-type">string</dd><dd class="reference-panel__arg-desc">splines_container_create, splines_add_knot, splines_evaluate, … (7 tools).</dd></div></dl></div></div></div></div></div></div>
+  </div>
+</section>
+
+<section class="intro section section-gradient scroll-reveal scroll-reveal--immediate" id="architecture"><div class="container center"><h1 id="intro_title">Architecture</h1><p>Four runtime parts cooperate: the Unity project with the bridge and verify packages installed, the HTTP bridge running inside the editor, the MCP server exposing tools/resources over stdio to AI clients, and Unity Hub Pro for setup and maintainer workflows.</p><p>Each tool call is routed — live bridge first, then headless batch Unity for a supported subset, then offline disk readers, or a local catalog operation that needs no Unity at all.</p><pre class="intro__pre code-block">AI Client → stdio JSON-RPC → MCP Server → route policy (live | batch | offline | local) → Unity Bridge / AssetDatabase / local catalog</pre></div></section>
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="bridge-api" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Bridge HTTP API &amp; resources</h2>
+    <p class="reference-panel-section__intro center">The in-editor bridge serves a local HTTP API on a deterministic per-project port (loopback by default; remote bind pairs with auth &#43; TLS). MCP resources expose cached health and the tool-group catalog.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Bridge HTTP API &amp; resources"><label class="reference-panel__select-wrap"><span class="visually-hidden">Bridge HTTP API &amp; resources</span><select class="reference-panel__select" aria-label="Bridge HTTP API &amp; resources"><option value="bridge-api-0" selected>ping</option><option value="bridge-api-1">tools inventory</option><option value="bridge-api-2">execute tool</option><option value="bridge-api-3">events</option><option value="bridge-api-4">resources</option><option value="bridge-api-5">health summary</option><option value="bridge-api-6">tool-groups catalog</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Bridge HTTP API &amp; resources"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="bridge-api-0" role="tab" aria-selected="true">ping</button></li><li><button type="button" class="split-widget__tab" data-target="bridge-api-1" role="tab" aria-selected="false">tools inventory</button></li><li><button type="button" class="split-widget__tab" data-target="bridge-api-2" role="tab" aria-selected="false">execute tool</button></li><li><button type="button" class="split-widget__tab" data-target="bridge-api-3" role="tab" aria-selected="false">events</button></li><li><button type="button" class="split-widget__tab" data-target="bridge-api-4" role="tab" aria-selected="false">resources</button></li><li><button type="button" class="split-widget__tab" data-target="bridge-api-5" role="tab" aria-selected="false">health summary</button></li><li><button type="button" class="split-widget__tab" data-target="bridge-api-6" role="tab" aria-selected="false">tool-groups catalog</button></li></ul></nav><div class="split-widget__panels"><div id="bridge-api-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">GET /ping</h3><p class="reference-panel__signature">Bridge and editor health snapshot</p><p class="reference-panel__description">Lightweight health check returning editor and bridge status; used by wait-for-ready and the bridge_status tool.</p></div></div><div id="bridge-api-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">GET /tools</h3><p class="reference-panel__signature">Compiled-state tool inventory + group→tools map</p><p class="reference-panel__description">Lists the bridge tools compiled into the current editor state, including which domain packs compiled in, and maps tool groups to their tools.</p></div></div><div id="bridge-api-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">POST /tools/{toolName}</h3><p class="reference-panel__signature">Execute one bridge tool</p><p class="reference-panel__description">Runs a single bridge tool with a JSON envelope; returns ok/result/error plus optional lifecycle/settle metadata for mutating tools.</p></div></div><div id="bridge-api-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">GET /events</h3><p class="reference-panel__signature">SSE event stream</p><p class="reference-panel__description">Server-Sent Events stream of console and editor-state events; /events/poll provides a pull-style drain for environments without SSE.</p></div></div><div id="bridge-api-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">GET /resources, GET /resources/{route}</h3><p class="reference-panel__signature">List and read bridge resources</p><p class="reference-panel__description">Enumerate and read bridge-side resource payloads.</p></div></div><div id="bridge-api-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity-open-mcp://health/summary</h3><p class="reference-panel__description">MCP resource: cached verify health summary from the last scan or gate validation.</p></div></div><div id="bridge-api-6" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity-open-mcp://tool-groups</h3><p class="reference-panel__description">MCP resource: static tool-group catalog (ids, descriptions, default-enabled flags).</p></div></div></div></div></div></div>
+  </div>
+</section>
+
+
+<section class="project-grid section section-gradient scroll-reveal scroll-reveal--immediate" id="related" data-widget-type="project_grid">
+  <div class="container">
+    <h2 class="center">Related</h2>
+    
+    <div class="project-grid__grid">
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Tauri &#43; Svelte</p>
+          
+          <h3 class="project-card__title">Unity Hub Pro</h3>
+          <p class="project-card__desc">Desktop companion that runs the AI Setup wizard and maintainer workflows on top of Unity Open MCP.</p>
+          <ul class="project-card__tags"><li>Companion</li><li>Desktop</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="../unity-hub-pro/">Learn more</a></p>
+        </div>
+      </article>
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Editor &amp; MCP</p>
+          
+          <h3 class="project-card__title">Unity Scanner</h3>
+          <p class="project-card__desc">A sibling MCP project — unified Editor and MCP scanner for project health, dependencies, shaders, and Addressables.</p>
+          <ul class="project-card__tags"><li>Unity</li><li>MCP</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="../unity-scanner/">Documentation</a></p>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="project-grid section section-gradient scroll-reveal scroll-reveal--immediate" id="links" data-widget-type="project_grid">
+  <div class="container">
+    
+    
+    <div class="project-grid__grid">
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">MIT</p>
+          
+          <h3 class="project-card__title">GitHub</h3>
+          <p class="project-card__desc">Source, issues, and the full tool reference for Unity Open MCP.</p>
+          <ul class="project-card__tags"><li>Source</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/unity-open-mcp" target="_blank" rel="noopener noreferrer">Open repo</a></p>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer section section-gradient" id="footer"><div class="container"><p class="footer-copyright">All projects are of MIT or BSD-3-Clause licenses.</p></div></footer>
+  <script type="application/json" id="site-widgets-config">{"scroll_reveal":{"respect_reduced_motion":true,"root_margin":"0px 0px -5% 0px","threshold":0.12},"carousel":{"swipe_threshold_px":30,"keyboard_navigation":true},"split_widget":{"keyboard_navigation":false}}</script>
+  <script src="../scroll-reveal.js" defer></script>
+  <script src="../catalog-carousel.js" defer></script>
+  <script src="../reference-panel.js" defer></script>
+  
+  <script src="../background-effects.js" defer></script>
+  <script src="../nav.js" defer></script>
+</body>
+</html>

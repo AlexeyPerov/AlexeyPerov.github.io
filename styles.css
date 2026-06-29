@@ -567,9 +567,17 @@ body.compact-sections .section {
 
 .offers-grid {
   margin-top: 28px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* flex-wrap + center so partial rows (e.g. 2 of 3 cards) center
+     instead of left-aligning; full rows look identical to a grid. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
+}
+
+.offers-grid .offer-card {
+  flex: 1 1 240px;
+  max-width: 360px;
 }
 
 .offer-card,
@@ -700,6 +708,72 @@ body.compact-sections .section {
 #unity-scanner-summary .project-grid__grid {
   grid-template-columns: minmax(0, 560px);
   justify-content: center;
+}
+
+/* "Links" project_grid variant — source/external links shown as compact,
+   narrow cards that read as a row of actions, not project showcases. */
+.project-grid.section#links .project-grid__grid {
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
+  gap: 0.85rem;
+  margin-top: 4px;
+}
+
+.project-grid.section#links .project-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 12px;
+}
+
+.project-grid.section#links .project-card__body {
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.project-grid.section#links .project-card__title {
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+
+.project-grid.section#links .project-card__desc {
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.project-grid.section#links .project-card__cta-wrap {
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.project-grid.section#links .project-card__cta {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .project-grid.section#links .project-grid__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid.section#links .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .project-grid.section#links .project-card__cta-wrap {
+    width: 100%;
+  }
+
+  .project-grid.section#links .project-card__cta {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 .section-gradient.catalog-showcase { background: var(--catalog-gradient); }
@@ -1262,6 +1336,11 @@ body.image-lightbox-open {
   }
   .photos-grid {
     grid-template-columns: 1fr;
+  }
+  /* info_grid: full-width single column on phones. */
+  .offers-grid .offer-card {
+    flex-basis: 100%;
+    max-width: none;
   }
   .catalog-app-card .catalog-carousel {
     display: none;

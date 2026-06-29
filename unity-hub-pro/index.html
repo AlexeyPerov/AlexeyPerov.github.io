@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity Hub Pro</title>
+  <link rel="icon" type="image/png" href="../assets/github-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700%7cRoboto:400,400i,700&amp;display=swap" rel="stylesheet">
+  <meta name="description" content="Unity Hub Pro — desktop companion for Unity Open MCP: manage Unity projects, run the AI Setup wizard, and handle maintainer workflows from one app.">
+  <link rel="canonical" href="https://alexeyperov.github.io/unity-hub-pro/">
+  <meta property="og:title" content="Unity Hub Pro">
+  <meta property="og:description" content="Unity Hub Pro — desktop companion for Unity Open MCP: manage Unity projects, run the AI Setup wizard, and handle maintainer workflows from one app.">
+  <meta property="og:url" content="https://alexeyperov.github.io/unity-hub-pro/">
+  <meta property="og:type" content="website">
+  
+  <meta name="theme-color" content="#4d8dff">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unity Hub Pro">
+  <meta name="twitter:description" content="Unity Hub Pro — desktop companion for Unity Open MCP: manage Unity projects, run the AI Setup wizard, and handle maintainer workflows from one app.">
+  
+  <style>
+    :root {
+      --font-heading: "Quicksand", sans-serif;
+      --font-body: "Roboto", sans-serif;
+      --accent: #4d8dff;
+      --accent-muted: #2a5fcc;
+      --follow-us-gradient: radial-gradient(ellipse 100% 60% at 50% 100%, #1a2240 0%, #0c0e14 70%);
+      --footer-gradient: linear-gradient(180deg, #151821 0%, #080a10 100%);
+      --intro-gradient: radial-gradient(ellipse 120% 80% at 50% -20%, #1e2840 0%, #0c0e14 72%);
+      --line: #2d3348;
+      --page-bg: #0c0e14;
+      --photos-gradient: linear-gradient(180deg, #151821 0%, #0c0e14 100%);
+      --project-grid-gradient: linear-gradient(180deg, #0c0e14 0%, #151821 50%, #0c0e14 100%);
+      --social-button-background: linear-gradient(145deg, #1e2230 0%, #151821 100%);
+      --social-icon-facebook: #6bb6ff;
+      --social-icon-github: #f4f6fb;
+      --social-icon-linkedin: #4d8dff;
+      --surface: #151821;
+      --surface-strong: #1e2230;
+      --text-primary: #f4f6fb;
+      --text-secondary: #9aa3b8;
+      --widget-gradient: linear-gradient(145deg, #1a1f2e 0%, #12151f 100%);
+    }
+    .scroll-reveal--immediate,
+    .scroll-reveal--immediate.scroll-reveal--visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.has-bg-effect { position: relative; }
+    .page-bg-effect {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .page-bg-effect__canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="has-bg-effect has-bg-effect--magic-dust compact-sections">
+  
+  <div class="page-bg-effect page-bg-effect--magic-dust" aria-hidden="true">
+    <canvas class="page-bg-effect__canvas"></canvas>
+  </div>
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <noscript>
+    <style>
+      .scroll-reveal,
+      .scroll-reveal.scroll-reveal--visible {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+  
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner header-inner--no-brand">
+        
+        
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Site navigation">
+          
+          <a class="site-nav__link" href="../">Home</a>
+          
+          <a class="site-nav__link" href="../unity-open-mcp/">Unity Open MCP</a>
+          
+          <a class="site-nav__link site-nav__link--active" href="./" aria-current="page">Unity Hub Pro</a>
+          
+          <a class="site-nav__link" href="../unity-tools/">Unity Tools</a>
+          
+          <a class="site-nav__link" href="../unity-scanner/">Unity Scanner</a>
+          
+          <a class="site-nav__link" href="../specops/">SpecOps</a>
+          
+          <a class="site-nav__link" href="../tools/">Apps / Tools</a>
+          
+        </nav>
+        
+      </div>
+    </div>
+  </header>
+  
+
+  <main id="main-content">
+    <section class="intro section section-gradient scroll-reveal scroll-reveal--immediate"><div class="container center"><h1 id="intro_title">Unity Hub Pro</h1><p>The desktop companion app for Unity Open MCP — manage Unity projects, run the AI Setup wizard for MCP onboarding, and handle maintainer workflows from one UI.</p><p>Built with Tauri 2 and SvelteKit (Svelte 5), with a Rust command backend. It also does general Unity project management — launching, version discovery, environment variables, and diagnostics.</p><p class="intro__cta-wrap"><a class="intro__cta" href="https://github.com/AlexeyPerov/unity-open-mcp" target="_blank" rel="noopener noreferrer">GitHub</a></p></div></section>
+
+<section class="widget-row section" id="unity-hub-pro-featured" data-widget-type="row"><div class="container widget-row-inner"><section class="catalog-showcase section section-gradient" id="apps" data-widget-type="apps_showcase">
+  <div class="container">
+    
+    <div class="catalog-apps-stack">
+      
+      <article class="offer-card catalog-app-card scroll-reveal catalog-app-card--title-in-header" style="background: linear-gradient(145deg, #1e2840 0%, #151821 55%, #0c0e14 100%)">
+        
+        <div class="catalog-app-card__header">
+          <h3 class="catalog-app-card__header-title">Unity Hub Pro</h3>
+        </div>
+        
+        <div class="catalog-app-card__icon-row">
+          <div class="catalog-app-card__stat catalog-app-card__stat--left">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">Tauri 2</span>
+            <span class="catalog-app-card__stat-line">Rust</span>
+          </div>
+          <div class="catalog-app-card__icon-wrap">
+            <img class="catalog-app-icon" src="../assets/github-logo.png" alt="Unity Hub Pro">
+          </div>
+          <div class="catalog-app-card__stat catalog-app-card__stat--right">
+            <span class="catalog-app-card__stat-line catalog-app-card__stat-line--emphasis">SvelteKit</span>
+            <span class="catalog-app-card__stat-line">Svelte 5</span>
+          </div>
+        </div>
+        <div class="catalog-app-card__body">
+          
+          <div class="catalog-app-card__columns">
+            <p class="catalog-app-card__col">Desktop companion for Unity Open MCP — project management, the AI Setup wizard, and maintainer workflows.</p>
+            <p class="catalog-app-card__col">First-run Unity Hub seed import, per-project launch options, diagnostics logging, and a build/test/publish panel for Open MCP repositories.</p>
+          </div>
+        </div>
+        
+        <div class="catalog-carousel" data-catalog-carousel role="region" aria-roledescription="carousel" aria-label="App screenshots">
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--prev" type="button" aria-label="Previous screenshot">‹</button>
+          <div class="catalog-carousel__viewport">
+            <div class="catalog-carousel__track">
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uhp-projects.png" alt="Unity Hub Pro screenshot 1" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uhp-install.png" alt="Unity Hub Pro screenshot 2" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uhp-settings.png" alt="Unity Hub Pro screenshot 3" loading="lazy" decoding="async">
+              </div>
+              
+              <div class="catalog-carousel__slide">
+                <img class="catalog-carousel__img" src="../assets/uhp-tools.png" alt="Unity Hub Pro screenshot 4" loading="lazy" decoding="async">
+              </div>
+              
+            </div>
+          </div>
+          <button class="catalog-carousel__arrow catalog-carousel__arrow--next" type="button" aria-label="Next screenshot">›</button>
+        </div>
+        
+        
+        <div class="catalog-app-card__stores">
+          
+          <a class="catalog-store-btn catalog-store-btn--custom" href="https://github.com/AlexeyPerov/unity-open-mcp" target="_blank" rel="noopener noreferrer" aria-label="Unity Hub Pro on GitHub">
+            <img class="catalog-store-btn__icon" src="../assets/github-logo.png" alt="" decoding="async">
+          </a>
+          
+        </div>
+        
+        
+      </article>
+      
+    </div>
+  </div>
+</section></div></section>
+
+<section class="offers section section-gradient scroll-reveal" id="offers"><div class="container"><h2 id="offers_title" class="center">Features</h2><div class="offers-grid"><article class="offer-card"><h3>Unity Hub seed import</h3><p>On first launch, reads the local Unity Hub project registry and imports all projects — a one-time seed that never overwrites your later edits.</p></article><article class="offer-card"><h3>AI Setup wizard</h3><p>A six-step wizard that detects the project, installs bridge/verify packages, writes the MCP client config, and verifies health.</p></article><article class="offer-card"><h3>Per-project launch &amp; env vars</h3><p>Launch Unity with per-project arguments, platform intent, and KEY=value environment variables — with collision detection and a confirmation modal.</p></article><article class="offer-card"><h3>Diagnostics &amp; launch logging</h3><p>Every launch writes a JSON-Lines record with a typed outcome; size-based rotation and a Status drawer that auto-expands on failure.</p></article><article class="offer-card"><h3>Unity Versions tab</h3><p>Discover installed Unity versions alongside an All releases view of recent LTS/TECH/BETA/ALPHA streams, with cached refresh.</p></article><article class="offer-card"><h3>Maintainer panel</h3><p>For Open MCP repositories: build, test, version bump, publish dry-run, and publish — with npm cwd pinned to mcp-server/.</p></article></div></div></section>
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="core-concepts" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">Core concepts</h2>
+    <p class="reference-panel-section__intro center">How Unity Hub Pro stores state, stays safe, and integrates with the shell. Behaviors documented as reference entries with config paths and CLI syntax.</p>
+    <div class="reference-panel" data-reference-panel aria-label="Core concepts"><label class="reference-panel__select-wrap"><span class="visually-hidden">Core concepts</span><select class="reference-panel__select" aria-label="Core concepts"><option value="core-concepts-0" selected>Config directory</option><option value="core-concepts-1">Atomic writes &amp; recovery</option><option value="core-concepts-2">Launch logging</option><option value="core-concepts-3">Typed launch errors</option><option value="core-concepts-4">Environment variables</option><option value="core-concepts-5">CLI mode</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="Core concepts"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="core-concepts-0" role="tab" aria-selected="true">Config directory</button></li><li><button type="button" class="split-widget__tab" data-target="core-concepts-1" role="tab" aria-selected="false">Atomic writes &amp; recovery</button></li><li><button type="button" class="split-widget__tab" data-target="core-concepts-2" role="tab" aria-selected="false">Launch logging</button></li><li><button type="button" class="split-widget__tab" data-target="core-concepts-3" role="tab" aria-selected="false">Typed launch errors</button></li><li><button type="button" class="split-widget__tab" data-target="core-concepts-4" role="tab" aria-selected="false">Environment variables</button></li><li><button type="button" class="split-widget__tab" data-target="core-concepts-5" role="tab" aria-selected="false">CLI mode</button></li></ul></nav><div class="split-widget__panels"><div id="core-concepts-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">~/.config/unity-hub-pro/</h3><p class="reference-panel__signature">macOS/Linux: ~/.config/unity-hub-pro/ · Windows: %APPDATA%\unity-hub-pro\</p><p class="reference-panel__description">All Hub state lives in a platform-specific config dir as two JSON files: settings.json (preferences) and projects.json (project inventory).</p></div></div><div id="core-concepts-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">save_settings / save_projects</h3><p class="reference-panel__description">Config writes go through a temp-file + rename and recover automatically from corruption — a truncated file is restored from safe defaults and backed up as .json.corrupt.</p></div></div><div id="core-concepts-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">logs/launches.log</h3><p class="reference-panel__signature">Record fields: timestamp, projectId, unityVersion, pid, launchArgs, buildTarget, outcome</p><p class="reference-panel__description">Per-launch JSON-Lines on a dedicated OS thread (never blocks Unity spawn), with size-based rotation at a 5 MB cap and a get_launch_log_tail command (clamped to last 2000 lines).</p></div></div><div id="core-concepts-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">LaunchError codes</h3><p class="reference-panel__description">Failure outcomes carry typed codes for actionable UX: projectNotFound, pathInvalid, versionMissing, installNotFound, launchFailed — plus a Reveal crash logs quick-action.</p></div></div><div id="core-concepts-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">env_var_collisions</h3><p class="reference-panel__description">Per-project KEY=value pairs merged into the spawned Unity env (child overrides parent). Collision lookup is non-mutating (no Unity spawn) and feeds a confirmation modal.</p></div></div><div id="core-concepts-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">unity-hub-pro -projectPath &lt;path&gt;</h3><p class="reference-panel__signature">Exit 0 = spawned · Exit 1 = path/version/spawn error</p><p class="reference-panel__description">Launch Unity from the terminal; if -projectPath is present, the Hub resolves the install and spawns the editor without opening the window.</p><pre class="reference-panel__code code-block"><code>unity-hub-pro -projectPath &quot;$PWD&quot;</code></pre></div></div></div></div></div></div>
+  </div>
+</section>
+
+
+<section class="reference-panel-section section section-gradient scroll-reveal scroll-reveal--immediate" id="wizard-steps" data-widget-type="reference_panel">
+  <div class="container">
+    <h2 class="center">AI Setup wizard</h2>
+    <p class="reference-panel-section__intro center">Six steps that take a Unity project from unconfigured to a verified MCP setup. A Clear AI Setup button removes all wizard artifacts (with .bak backups).</p>
+    <div class="reference-panel" data-reference-panel aria-label="AI Setup wizard"><label class="reference-panel__select-wrap"><span class="visually-hidden">AI Setup wizard</span><select class="reference-panel__select" aria-label="AI Setup wizard"><option value="wizard-steps-0" selected>1 · Project detection</option><option value="wizard-steps-1">2 · MCP server source</option><option value="wizard-steps-2">3 · Unity packages</option><option value="wizard-steps-3">4 · MCP client config</option><option value="wizard-steps-4">5 · Agent skill</option><option value="wizard-steps-5">6 · Launch &amp; verify</option></select></label><div class="split-widget"><div class="split-widget__layout"><nav class="split-widget__nav" aria-label="AI Setup wizard"><ul class="split-widget__list"><li><button type="button" class="split-widget__tab is-active" data-target="wizard-steps-0" role="tab" aria-selected="true">1 · Project detection</button></li><li><button type="button" class="split-widget__tab" data-target="wizard-steps-1" role="tab" aria-selected="false">2 · MCP server source</button></li><li><button type="button" class="split-widget__tab" data-target="wizard-steps-2" role="tab" aria-selected="false">3 · Unity packages</button></li><li><button type="button" class="split-widget__tab" data-target="wizard-steps-3" role="tab" aria-selected="false">4 · MCP client config</button></li><li><button type="button" class="split-widget__tab" data-target="wizard-steps-4" role="tab" aria-selected="false">5 · Agent skill</button></li><li><button type="button" class="split-widget__tab" data-target="wizard-steps-5" role="tab" aria-selected="false">6 · Launch &amp; verify</button></li></ul></nav><div class="split-widget__panels"><div id="wizard-steps-0" class="split-widget__panel is-active" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">Step 1</h3><p class="reference-panel__description">Checks the Unity layout and version, Node.js 18+, a writable manifest, and whether bridge/verify/config are already present.</p></div></div><div id="wizard-steps-1" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">Step 2</h3><p class="reference-panel__description">Choose how the MCP server runs — npx default, an optional global install, or a local checkout pointed at mcp-server/dist.</p></div></div><div id="wizard-steps-2" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">Step 3</h3><p class="reference-panel__description">Install or upgrade the bridge and verify packages (and optional domain dependencies), with a manifest diff to review before applying.</p></div></div><div id="wizard-steps-3" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">Step 4</h3><p class="reference-panel__description">Writes the MCP client config for Cursor, Claude Desktop, OpenCode, or ZCode — each with its own JSON shape and (for ZCode) skills under .agents/skills/.</p></div></div><div id="wizard-steps-4" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">Step 5</h3><p class="reference-panel__description">Optionally copy a SKILL.md playbook so the assistant knows the available Unity tools and the gate workflow.</p></div></div><div id="wizard-steps-5" class="split-widget__panel" role="tabpanel"><div class="reference-panel__detail"><h3 class="reference-panel__method">Step 6</h3><p class="reference-panel__description">Launch Unity, wait for compile, and run health checks (bridge ping + tool inventory) to confirm the setup is live.</p></div></div></div></div></div></div>
+  </div>
+</section>
+
+<section class="intro section section-gradient scroll-reveal scroll-reveal--immediate" id="architecture"><div class="container center"><h1 id="intro_title">Architecture</h1><p>A SvelteKit &#43; Svelte 5 frontend (runes-based state) talks to a Rust backend of #[tauri::command] functions in hub/src-tauri/src/.</p><p>Commands handle filesystem reads/writes, Unity version discovery, project launching with diagnostics logging, git status, line counts, and the maintainer npm flows.</p><pre class="intro__pre code-block">SvelteKit UI → invoke() → Tauri commands (Rust) → filesystem / Unity spawn / npm</pre></div></section>
+
+<section class="project-grid section section-gradient scroll-reveal scroll-reveal--immediate" id="related" data-widget-type="project_grid">
+  <div class="container">
+    <h2 class="center">Related</h2>
+    
+    <div class="project-grid__grid">
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Server &amp; Bridge</p>
+          
+          <h3 class="project-card__title">Unity Open MCP</h3>
+          <p class="project-card__desc">The MCP server and Unity bridge that Unity Hub Pro sets up and maintains — ~160 tools and the gate workflow.</p>
+          <ul class="project-card__tags"><li>Companion</li><li>MCP</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="../unity-open-mcp/">Learn more</a></p>
+        </div>
+      </article>
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">Editor &amp; MCP</p>
+          
+          <h3 class="project-card__title">Unity Scanner</h3>
+          <p class="project-card__desc">A sibling MCP project — unified Editor and MCP scanner for project health, dependencies, shaders, and Addressables.</p>
+          <ul class="project-card__tags"><li>Unity</li><li>MCP</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="../unity-scanner/">Documentation</a></p>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="project-grid section section-gradient scroll-reveal scroll-reveal--immediate" id="links" data-widget-type="project_grid">
+  <div class="container">
+    
+    
+    <div class="project-grid__grid">
+      
+      <article class="project-card scroll-reveal project-card--no-media">
+        
+        <div class="project-card__body">
+          <p class="project-card__meta-line">MIT</p>
+          
+          <h3 class="project-card__title">GitHub</h3>
+          <p class="project-card__desc">Source and issues for Unity Hub Pro (lives in the unity-open-mcp repository under hub/).</p>
+          <ul class="project-card__tags"><li>Source</li></ul>
+          <p class="project-card__cta-wrap"><a class="project-card__cta" href="https://github.com/AlexeyPerov/unity-open-mcp" target="_blank" rel="noopener noreferrer">Open repo</a></p>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer section section-gradient" id="footer"><div class="container"><p class="footer-copyright">All projects are of MIT or BSD-3-Clause licenses.</p></div></footer>
+  <script type="application/json" id="site-widgets-config">{"scroll_reveal":{"respect_reduced_motion":true,"root_margin":"0px 0px -5% 0px","threshold":0.12},"carousel":{"swipe_threshold_px":30,"keyboard_navigation":true},"split_widget":{"keyboard_navigation":false}}</script>
+  <script src="../scroll-reveal.js" defer></script>
+  <script src="../catalog-carousel.js" defer></script>
+  <script src="../reference-panel.js" defer></script>
+  
+  <script src="../background-effects.js" defer></script>
+  <script src="../nav.js" defer></script>
+</body>
+</html>
